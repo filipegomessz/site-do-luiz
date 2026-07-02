@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { site } from "@/data/site";
+import { CopyEmail } from "./CopyEmail";
 
 const links = [
   { href: "#sobre", label: "Sobre" },
@@ -33,7 +34,6 @@ export function Nav() {
       >
         <a href="#topo" className="font-display text-lg font-bold tracking-tight">
           {site.name.split(" ")[0]}
-          <span className="text-brand">.</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -48,12 +48,9 @@ export function Nav() {
           ))}
         </nav>
 
-        <a
-          href={`mailto:${site.email}`}
-          className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-brand-glow"
-        >
+        <CopyEmail className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-brand-glow">
           Entre em contato
-        </a>
+        </CopyEmail>
       </div>
     </header>
   );

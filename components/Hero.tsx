@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { site } from "@/data/site";
 import { Avatar } from "./Avatar";
+import { CopyEmail } from "./CopyEmail";
 
 export function Hero() {
   return (
@@ -54,12 +55,9 @@ export function Hero() {
             >
               Ver portfólio
             </a>
-            <a
-              href={`mailto:${site.email}`}
-              className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/40"
-            >
+            <CopyEmail className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/40">
               {site.email}
-            </a>
+            </CopyEmail>
           </motion.div>
         </div>
 
@@ -69,12 +67,12 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mx-auto"
         >
-          <Avatar size={300} />
+          <Avatar width={360} />
         </motion.div>
       </div>
 
       <div className="pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2 text-xs uppercase tracking-widest text-zinc-600">
-        role para descer ↓
+        ver mais ↓
       </div>
     </section>
   );

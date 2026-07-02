@@ -1,4 +1,5 @@
 import { site } from "@/data/site";
+import { CopyEmail } from "./CopyEmail";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -8,12 +9,9 @@ export function Footer() {
         <p>
           © {year} {site.name} — {site.role}
         </p>
-        <a
-          href={`mailto:${site.email}`}
-          className="transition-colors hover:text-white"
-        >
+        <CopyEmail className="transition-colors hover:text-white">
           {site.email}
-        </a>
+        </CopyEmail>
       </div>
     </footer>
   );

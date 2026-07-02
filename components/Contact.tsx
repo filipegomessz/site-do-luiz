@@ -1,5 +1,6 @@
 import { site } from "@/data/site";
 import { Reveal } from "./Reveal";
+import { CopyEmail } from "./CopyEmail";
 
 export function Contact() {
   const { instagram, youtube, whatsapp } = site.socials;
@@ -26,12 +27,9 @@ export function Contact() {
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href={`mailto:${site.email}`}
-              className="rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-brand-glow"
-            >
+            <CopyEmail className="rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-brand-glow">
               {site.email}
-            </a>
+            </CopyEmail>
             {socials.map((s) => (
               <a
                 key={s.label}

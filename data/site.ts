@@ -11,7 +11,7 @@ export const site = {
   // ----- FOTO DE PERFIL -----
   // Coloque a imagem em /public (ex.: public/luiz.jpg) e troque o caminho abaixo.
   // Enquanto não tiver foto, deixe "" que aparece um placeholder com as iniciais.
-  photo: "", // ex.: "/luiz.jpg"
+  photo: "/luiz.jpg",
 
   tagline:
     "Transformo lives e podcasts em cortes que prendem a atenção do início ao fim.",
@@ -58,32 +58,39 @@ export const site = {
     },
   ],
 
-  // ----- PORTFÓLIO -----
-  // Cole os links do Google Drive (ou YouTube) em "url".
-  // Em "thumb" você pode pôr uma imagem de capa em /public; deixe "" por enquanto.
+  // ----- PORTFÓLIO (carrossel por canal) -----
+  // Cada canal tem seus vídeos. Para adicionar um vídeo do Google Drive,
+  // use o link de "preview": https://drive.google.com/file/d/ID_DO_ARQUIVO/preview
+  // (o arquivo precisa estar compartilhado como "qualquer pessoa com o link").
   portfolio: [
     {
-      title: "Corte 1",
       channel: "Renato Cariani Cortes",
-      url: "", // ex.: link do Drive ou YouTube
-      thumb: "",
+      videos: [
+        { title: "Corte 1", embed: "https://drive.google.com/file/d/1dHvyG4Cau1ubBBXJ0yS45ehsqCRyZ6ye/preview" },
+        { title: "Corte 2", embed: "https://drive.google.com/file/d/12bNE6KKHeCrXKoi4EZU7iRAT_aki7DoU/preview" },
+        { title: "Corte 3", embed: "https://drive.google.com/file/d/1j7HZWc9HxsX1I6rn06sifh7Yryg3fIa8/preview" },
+      ],
     },
     {
-      title: "Corte 2",
-      channel: "IngCut Cortes",
-      url: "",
-      thumb: "",
-    },
-    {
-      title: "Corte 3",
       channel: "Cortes Primos Agro",
-      url: "",
-      thumb: "",
+      videos: [
+        { title: "Corte 1", embed: "https://drive.google.com/file/d/1nsxgWu347hFukKg0RkK3dk1jFlrlwAKt/preview" },
+        { title: "Corte 2", embed: "https://drive.google.com/file/d/1zr1rRo7Q5LC9MjFRathfmaQPOETJ8wRK/preview" },
+        { title: "Corte 3", embed: "https://drive.google.com/file/d/1EmgLvnH0Mm40EY8ey5dOWsGRwKy2bbvF/preview" },
+      ],
+    },
+    {
+      channel: "IngCut Cortes",
+      videos: [
+        { title: "Corte 1", embed: "https://drive.google.com/file/d/1UyVTnyPByBGg_SWuB--vQzSOiWlltWGg/preview" },
+        { title: "Corte 2", embed: "https://drive.google.com/file/d/1R1hinaLsmDtVOIimaNdfQBKtgPpZYfWN/preview" },
+        { title: "Corte 3 – IngCut", embed: "https://drive.google.com/file/d/17gy7qf21iheFSi-0I34h35zcHEiV9hSh/preview" },
+      ],
     },
   ],
 
-  // ----- CANAIS ATENDIDOS -----
-  channels: ["Renato Cariani Cortes", "IngCut Cortes", "Cortes Primos Agro"],
+  // ----- CANAIS ATENDIDOS (usado no marquee) -----
+  channels: ["Renato Cariani Cortes", "Cortes Primos Agro", "IngCut Cortes"],
 
   // ----- REDES (opcional) — deixe "" para esconder -----
   socials: {
