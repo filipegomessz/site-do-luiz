@@ -15,17 +15,6 @@ export function Focus() {
           <p className="mt-5 max-w-md text-[15px] leading-relaxed text-zinc-400">
             {site.focus.body}
           </p>
-
-          <div className="mt-8 flex flex-wrap gap-3">
-            {site.focus.niches.map((n) => (
-              <span
-                key={n}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm font-medium text-zinc-300"
-              >
-                {n}
-              </span>
-            ))}
-          </div>
         </Reveal>
 
         <div className="grid gap-4 sm:grid-cols-2">

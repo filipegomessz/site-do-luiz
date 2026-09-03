@@ -24,7 +24,7 @@ export const site = {
 
   story: {
     title: "Minha trajetória",
-    body: "Comecei editando vídeos para amigos e pequenos criadores, e logo descobri que tinha paixão por contar histórias em formatos curtos. Hoje trabalho com diversos canais, transformando lives e podcasts em cortes que viralizam.",
+    body: 'Comecei a editar vídeos como hobby, fazendo "melhores momentos" jogando videogame com meus amigos, aos 14 anos. Na época, era também aquela vontade de todo garoto que começava na internet: ser YouTuber. Com o tempo, percebi que tinha facilidade para contar histórias, criar ritmo e, arrancar algumas risadas de quem assistia.',
   },
 
   experience: {
@@ -34,8 +34,7 @@ export const site = {
 
   focus: {
     title: "Meu foco",
-    body: "Atualmente foco em edição de cortes para nichos de fitness, agronegócio e entretenimento, ajudando criadores a multiplicarem o alcance dos seus conteúdos.",
-    niches: ["Fitness", "Agronegócio", "Entretenimento"],
+    body: "Atualmente foco em edição de vídeos curtos, ajudando criadores a multiplicarem o alcance dos seus conteúdos. Meu trabalho é voltado principalmente para formatos curtos, mas também posso assumir projetos em formatos mais longos quando necessário, adaptando a edição à proposta e ao objetivo de cada conteúdo.",
   },
 
   // ----- O QUE EU FAÇO (cards) -----
