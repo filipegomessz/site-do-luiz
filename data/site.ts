@@ -24,7 +24,7 @@ export const site = {
 
   story: {
     title: "Minha trajetória",
-    body: 'Comecei a editar vídeos como hobby, fazendo "melhores momentos" jogando videogame com meus amigos, aos 14 anos. Na época, era também aquela vontade de todo garoto que começava na internet: ser YouTuber. Com o tempo, percebi que tinha facilidade para contar histórias, criar ritmo e, arrancar algumas risadas de quem assistia.',
+    body: 'Comecei a editar vídeos como hobby, fazendo "melhores momentos" jogando videogame com meus amigos, aos 14 anos. Com o tempo, percebi que tinha facilidade para contar histórias, criar ritmo e, arrancar algumas risadas de quem assistia.',
   },
 
   experience: {
