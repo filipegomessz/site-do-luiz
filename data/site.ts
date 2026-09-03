@@ -66,24 +66,24 @@ export const site = {
       channel: "Renato Cariani Cortes",
       videos: [
         { title: "Corte 1", embed: "https://drive.google.com/file/d/1OZra-ATxw8p-t33J1HPk69alyUZ98z_B/preview" },
-        { title: "Corte 2", embed: "https://drive.google.com/file/d/12bNE6KKHeCrXKoi4EZU7iRAT_aki7DoU/preview" },
-        { title: "Corte 3", embed: "https://drive.google.com/file/d/1j7HZWc9HxsX1I6rn06sifh7Yryg3fIa8/preview" },
+        { title: "Corte 2", embed: "https://drive.google.com/file/d/1ncpTSMsk2lVAF-rq0qwGMWoaD5OeqlVY/preview" },
+        { title: "Corte 3", embed: "https://drive.google.com/file/d/1NPikJlWdFvtIadieJ7ItNMLnSsOHAqiM/preview" },
       ],
     },
     {
       channel: "Cortes Primos Agro",
       videos: [
-        { title: "Corte 1", embed: "https://drive.google.com/file/d/1nsxgWu347hFukKg0RkK3dk1jFlrlwAKt/preview" },
-        { title: "Corte 2", embed: "https://drive.google.com/file/d/1zr1rRo7Q5LC9MjFRathfmaQPOETJ8wRK/preview" },
-        { title: "Corte 3", embed: "https://drive.google.com/file/d/1EmgLvnH0Mm40EY8ey5dOWsGRwKy2bbvF/preview" },
+        { title: "Corte 1", embed: "https://drive.google.com/file/d/15jSwy6sjhGpwmMoZyoffS5Ta_ixYtD49/preview" },
+        { title: "Corte 2", embed: "https://drive.google.com/file/d/1BlPaG_qDfrvaEkeBHVsYuECHR511IhCH/preview" },
+        { title: "Corte 3", embed: "https://drive.google.com/file/d/1t3GyHiK1Bw1FUmshHHRYMIldfJiRYx7q/preview" },
       ],
     },
     {
       channel: "IngCut Cortes",
       videos: [
-        { title: "Corte 1", embed: "https://drive.google.com/file/d/1UyVTnyPByBGg_SWuB--vQzSOiWlltWGg/preview" },
-        { title: "Corte 2", embed: "https://drive.google.com/file/d/1R1hinaLsmDtVOIimaNdfQBKtgPpZYfWN/preview" },
-        { title: "Corte 3 – IngCut", embed: "https://drive.google.com/file/d/17gy7qf21iheFSi-0I34h35zcHEiV9hSh/preview" },
+        { title: "Corte 1", embed: "https://drive.google.com/file/d/1bypazObB7mQIF3mYi1jnNIjVaSR8sGe3/preview" },
+        { title: "Corte 2", embed: "https://drive.google.com/file/d/1jt-cLz1JXlI62DoL7aOIrl1prnWnEMjF/preview" },
+        { title: "Corte 3", embed: "https://drive.google.com/file/d/105COXz3NjULMh1yVis46w3s3qNBRca5Z/preview" },
       ],
     },
   ],
