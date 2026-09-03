@@ -65,7 +65,7 @@ export const site = {
     {
       channel: "Renato Cariani Cortes",
       videos: [
-        { title: "Corte 1", embed: "https://drive.google.com/file/d/1OZra-ATxw8p-t33J1HPk69alyUZ98z_B/view?usp=sharing" },
+        { title: "Corte 1", embed: "https://drive.google.com/file/d/1OZra-ATxw8p-t33J1HPk69alyUZ98z_B/preview" },
         { title: "Corte 2", embed: "https://drive.google.com/file/d/12bNE6KKHeCrXKoi4EZU7iRAT_aki7DoU/preview" },
         { title: "Corte 3", embed: "https://drive.google.com/file/d/1j7HZWc9HxsX1I6rn06sifh7Yryg3fIa8/preview" },
       ],
