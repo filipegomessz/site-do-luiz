@@ -19,11 +19,11 @@ export function Contact() {
             Vamos trabalhar juntos
           </p>
           <h2 className="mx-auto mt-4 max-w-2xl font-display text-3xl font-bold leading-tight text-white sm:text-5xl">
-            Tem um conteúdo que precisa virar corte?
+            Tem um conteúdo que precisa ser editado?
           </h2>
           <p className="mx-auto mt-5 max-w-md text-[15px] leading-relaxed text-zinc-400">
             Me manda uma mensagem e vamos transformar suas lives e podcasts em
-            cortes que prendem a atenção.
+            vídeos que prendem a atenção.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
