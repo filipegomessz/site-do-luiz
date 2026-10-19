@@ -1,17 +1,18 @@
-import { site } from "@/data/site";
+import type { Site } from "@/data/site";
 import { Reveal } from "./Reveal";
 
-export function About() {
-  const blocks = [site.why, site.story, site.experience];
+export function About({ content }: { content: Site }) {
+  const { ids, aboutSection } = content.ui;
+  const blocks = [content.why, content.story, content.experience];
 
   return (
-    <section id="sobre" className="mx-auto max-w-6xl px-6 py-28">
+    <section id={ids.about} className="mx-auto max-w-6xl px-6 py-28">
       <Reveal>
         <p className="text-sm font-semibold uppercase tracking-widest text-brand">
-          Sobre mim
+          {aboutSection.label}
         </p>
         <h2 className="mt-3 max-w-2xl font-display text-3xl font-bold text-white sm:text-4xl">
-          Um bom corte transforma a forma como uma ideia chega às pessoas.
+          {aboutSection.heading}
         </h2>
       </Reveal>
 

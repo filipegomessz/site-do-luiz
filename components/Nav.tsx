@@ -1,18 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { site } from "@/data/site";
+import type { Site } from "@/data/site";
 import { CopyEmail } from "./CopyEmail";
 
-const links = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#foco", label: "Foco" },
-  { href: "#portfolio", label: "Portfólio" },
-  { href: "#contato", label: "Contato" },
-];
-
-export function Nav() {
+export function Nav({ content }: { content: Site }) {
+  const { ids, nav, langSwitch } = content.ui;
   const [scrolled, setScrolled] = useState(false);
+
+  const links = [
+    { href: `#${ids.about}`, label: nav.about },
+    { href: `#${ids.focus}`, label: nav.focus },
+    { href: `#${ids.portfolio}`, label: nav.portfolio },
+    { href: `#${ids.contact}`, label: nav.contact },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -32,8 +33,11 @@ export function Nav() {
           scrolled ? "glass mx-4 md:mx-auto" : "bg-transparent"
         }`}
       >
-        <a href="#topo" className="font-display text-lg font-bold tracking-tight">
-          {site.name.split(" ")[0]}
+        <a
+          href={`#${ids.top}`}
+          className="font-display text-lg font-bold tracking-tight"
+        >
+          {content.name.split(" ")[0]}
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -48,9 +52,22 @@ export function Nav() {
           ))}
         </nav>
 
-        <CopyEmail className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-brand-glow">
-          Entre em contato
-        </CopyEmail>
+        <div className="flex items-center gap-2.5">
+          <a
+            href={langSwitch.href}
+            title={langSwitch.title}
+            className="rounded-full border border-white/15 px-3 py-2 text-xs font-semibold text-zinc-400 transition-colors hover:border-white/40 hover:text-white"
+          >
+            {langSwitch.label}
+          </a>
+
+          <CopyEmail
+            content={content}
+            className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-transform hover:scale-105 hover:bg-brand-glow"
+          >
+            {nav.cta}
+          </CopyEmail>
+        </div>
       </div>
     </header>
   );

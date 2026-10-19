@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, type PanInfo } from "framer-motion";
-import { site } from "@/data/site";
+import type { Site } from "@/data/site";
 import { Reveal } from "./Reveal";
 
 const CARD_W = 280; // largura do card central (px)
@@ -55,8 +55,9 @@ function SideThumb({ embed, title }: { embed: string; title: string }) {
   );
 }
 
-export function Portfolio() {
-  const channels = site.portfolio;
+export function Portfolio({ content }: { content: Site }) {
+  const { ids, portfolioSection } = content.ui;
+  const channels = content.portfolio;
   const [channel, setChannel] = useState(0);
   const [active, setActive] = useState(0);
   // vídeo central "ativado" (player liberado p/ dar play); null = mostra capa+arraste
@@ -89,17 +90,16 @@ export function Portfolio() {
   };
 
   return (
-    <section id="portfolio" className="mx-auto max-w-6xl px-6 py-28">
+    <section id={ids.portfolio} className="mx-auto max-w-6xl px-6 py-28">
       <Reveal>
         <p className="text-sm font-semibold uppercase tracking-widest text-brand">
-          Portfólio
+          {portfolioSection.label}
         </p>
         <h2 className="mt-3 font-display text-3xl font-bold text-white sm:text-4xl">
-          Alguns cortes selecionados
+          {portfolioSection.heading}
         </h2>
         <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-zinc-400">
-          Trabalhos para canais de grande alcance. Escolha um canal e arraste
-          para navegar pelos cortes.
+          {portfolioSection.body}
         </p>
       </Reveal>
 
@@ -215,7 +215,7 @@ export function Portfolio() {
           {current.videos.map((_, i) => (
             <button
               key={i}
-              aria-label={`Ir para o vídeo ${i + 1}`}
+              aria-label={`${portfolioSection.goToVideo} ${i + 1}`}
               onClick={() => jump(i)}
               className={`h-2.5 rounded-full transition-all ${
                 i === active ? "w-8 bg-brand" : "w-2.5 bg-white/20 hover:bg-white/40"

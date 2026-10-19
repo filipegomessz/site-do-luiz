@@ -1,26 +1,26 @@
 "use client";
 
 import { useState } from "react";
-import { site } from "@/data/site";
+import type { Site } from "@/data/site";
 
 export function CopyEmail({
+  content,
   children,
   className,
-  copiedLabel = "E-mail copiado!",
 }: {
+  content: Site;
   children: React.ReactNode;
   className?: string;
-  copiedLabel?: string;
 }) {
   const [copied, setCopied] = useState(false);
 
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(site.email);
+      await navigator.clipboard.writeText(content.email);
     } catch {
       // fallback para navegadores sem clipboard API
       const el = document.createElement("textarea");
-      el.value = site.email;
+      el.value = content.email;
       document.body.appendChild(el);
       el.select();
       document.execCommand("copy");
@@ -32,7 +32,7 @@ export function CopyEmail({
 
   return (
     <button type="button" onClick={copy} className={className}>
-      {copied ? copiedLabel : children}
+      {copied ? content.ui.emailCopied : children}
     </button>
   );
 }

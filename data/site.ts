@@ -1,6 +1,10 @@
 // ============================================================
 //  EDITE AQUI — todo o conteúdo do site fica neste arquivo.
 //  Troque foto, e-mail e links dos vídeos quando quiser.
+//
+//  Este é o site em PORTUGUÊS (nastedit.online).
+//  A versão em inglês fica em data/site-en.ts e tem exatamente
+//  os mesmos campos. Mexeu num, confira o outro.
 // ============================================================
 
 export const site = {
@@ -96,6 +100,70 @@ export const site = {
     instagram: "",
     youtube: "",
     whatsapp: "", // ex.: "https://wa.me/55SEUNUMERO"
+  },
+
+  // ============================================================
+  //  RÓTULOS DA INTERFACE
+  //  Menu, botões e títulos de seção. Mexa aqui se quiser trocar
+  //  o nome de um botão; o resto do site se ajusta sozinho.
+  // ============================================================
+  ui: {
+    // Nomes das âncoras na barra de endereço (nastedit.online/#sobre).
+    // Só letras minúsculas, sem acento e sem espaço.
+    ids: {
+      top: "topo",
+      about: "sobre",
+      focus: "foco",
+      portfolio: "portfolio",
+      contact: "contato",
+    },
+
+    nav: {
+      about: "Sobre",
+      focus: "Foco",
+      portfolio: "Portfólio",
+      contact: "Contato",
+      cta: "Entre em contato",
+    },
+
+    hero: {
+      seeWork: "Ver portfólio",
+      scroll: "ver mais ↓",
+    },
+
+    // Entram no letreiro deslizante junto com os nomes dos canais.
+    marquee: ["Lives", "Podcasts", "Shorts", "Reels"],
+
+    aboutSection: {
+      label: "Sobre mim",
+      heading: "Um bom corte transforma a forma como uma ideia chega às pessoas.",
+    },
+
+    focusSection: {
+      heading: "Cortes feitos para multiplicar alcance.",
+    },
+
+    portfolioSection: {
+      label: "Portfólio",
+      heading: "Alguns cortes selecionados",
+      body: "Trabalhos para canais de grande alcance. Escolha um canal e arraste para navegar pelos cortes.",
+      goToVideo: "Ir para o vídeo", // vira "Ir para o vídeo 2" (leitor de tela)
+    },
+
+    contactSection: {
+      label: "Vamos trabalhar juntos",
+      heading: "Tem um conteúdo que precisa ser editado?",
+      body: "Me manda uma mensagem e vamos transformar suas lives e podcasts em vídeos que prendem a atenção.",
+    },
+
+    emailCopied: "E-mail copiado!",
+
+    // Botão que leva para a outra língua, no canto da barra de cima.
+    langSwitch: {
+      label: "EN",
+      href: "/en/",
+      title: "Read in English",
+    },
   },
 };
 

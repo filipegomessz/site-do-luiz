@@ -1,7 +1,7 @@
-import { site } from "@/data/site";
+import type { Site } from "@/data/site";
 
-export function Marquee() {
-  const items = [...site.channels, "Lives", "Podcasts", "Shorts", "Reels"];
+export function Marquee({ content }: { content: Site }) {
+  const items = [...content.channels, ...content.ui.marquee];
   const row = [...items, ...items];
 
   return (
